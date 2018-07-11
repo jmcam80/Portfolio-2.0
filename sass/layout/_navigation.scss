@@ -1,0 +1,46 @@
+.navigation {
+    height: 7rem;
+    position: relative;
+     @include clearfix;
+
+    &__logo {
+        float: left;
+        padding: 1rem 0;
+    }
+   
+    &__list {
+       
+        margin-top: 1rem;
+        float: right;
+
+        @include respond(phone) {
+
+            display: none;
+        }
+        
+    }
+
+    &__item {
+        display: inline-block;
+        margin-right: 7.5rem;
+    }
+
+    &__link {
+        color: $color-white;
+        width: 10rem;
+        border-radius: 0.5rem;
+        z-index: 2000;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.6rem;
+        font-weight: 900;
+        text-decoration: none;
+        
+
+        &:hover {
+            text-decoration: underline $color-white;
+        }
+
+    }
+}
+

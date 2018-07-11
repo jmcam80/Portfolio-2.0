@@ -1,0 +1,21 @@
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.2;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        background-image: 
+        linear-gradient(to right bottom,
+        rgba($color-grey-dark-3, 0.9),
+        rgba($color-grey-dark-3, 0.8)),
+        url("../img/web-design-2906159_1920.jpg");
+        background-size: cover;
+    }
+}
